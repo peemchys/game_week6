@@ -3,14 +3,12 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'game.dart';
+import 'package:untitled/game.dart';
 
 void main() {
-
-
   while(true){
     stdout.write('Enter a maximum number to random: ');
-    var randomToUser  = int.tryParse(stdin.readLineSync()!); //! คือไม่ให้เป็น null
+    var randomToUser  = int.tryParse(stdin.readLineSync()!);
     if(randomToUser == null){
       continue;
     }
